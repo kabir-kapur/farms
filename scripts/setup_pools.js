@@ -2,7 +2,7 @@ const Tiramisu = artifacts.require('CakeToken');
 const Fudge = artifacts.require('SyrupBar');
 const UniswapRouter = require('../abis/UniswapFactory.json');
 
-module.exports = async function (deployer) {
+module.exports = async function (callback) {
   const tiramisu = await Tiramisu.deployed();
   const fudge = await Fudge.deployed();
 
@@ -25,20 +25,25 @@ module.exports = async function (deployer) {
     ],
   };
 
+  const [deployer] = await web3.eth.getAccounts();
+  const networkId = await web3.eth.getChainId();
+
   async function create(token0, token1) {
     try {
       await new Promise((resolve, reject) => {
         factory.methods
           .createPair(token0, token1)
-          .send({ from: deployer.provider.addresses[0] })
+          .send({ from: deployer })
           .on('confirmation', resolve)
           .on('error', reject);
       });
-    } catch (e) {}
+    } catch (e) {
+      // exists
+    }
     console.log('>>>', await factory.methods.getPair(token0, token1).call());
   }
 
-  const networkAddresses = addresses[deployer.network_id];
+  const networkAddresses = addresses[networkId];
 
   console.log('Marzipan <> Fudge');
   await create(tiramisu.address, fudge.address);
@@ -48,5 +53,12 @@ module.exports = async function (deployer) {
     await create(tiramisu.address, address);
     console.log(`Fudge <> ${name}`);
     await create(fudge.address, address);
+
+    for (const { name: name1, address: address1 } of networkAddresses) {
+      console.log(`${name} <> ${name1}`);
+      await create(address, address1);
+    }
   }
+
+  callback();
 };
