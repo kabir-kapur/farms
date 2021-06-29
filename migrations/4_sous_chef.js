@@ -3,6 +3,7 @@ const SousChef = artifacts.require('SousChef');
 
 module.exports = async function (deployer) {
   const fudge = await Fudge.deployed();
+
   await deployer.deploy(
     SousChef,
     fudge.address,
