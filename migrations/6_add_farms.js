@@ -8,21 +8,24 @@ module.exports = async function (deployer) {
   const chef = await MasterChef.deployed();
   const marzipan = await Marzipan.deployed();
 
+  const [account] = await web3.eth.getAccounts();
+  const networkId = await web3.eth.getChainId();
+
   const factory = new web3.eth.Contract(
     UniswapRouter,
-    ubeswap[deployer.network_id].factory
+    ubeswap[networkId].factory
   );
 
   const MZPN = marzipan.address;
 
   for (const { allocPoints, token } of [
-    { allocPoints: 700, token: tokens[deployer.network_id].CELO },
-    { allocPoints: 300, token: tokens[deployer.network_id].cUSD },
-    { allocPoints: 300, token: tokens[deployer.network_id].cEUR },
+    { allocPoints: 700, token: tokens[networkId].CELO },
+    { allocPoints: 300, token: tokens[networkId].cUSD },
+    { allocPoints: 300, token: tokens[networkId].cEUR },
   ]) {
     const lp = await factory.methods.getPair(token, MZPN).call();
     await chef.add(allocPoints, lp, true, {
-      from: deployer.provider.addresses[0],
+      from: account,
     });
   }
 };

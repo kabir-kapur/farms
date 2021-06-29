@@ -1,17 +1,19 @@
-const Tiramisu = artifacts.require('CakeToken');
+const Marzipan = artifacts.require('CakeToken');
 const Fudge = artifacts.require('SyrupBar');
 const MasterChef = artifacts.require('MasterChef');
 
 module.exports = async function (deployer) {
-  const tiramisu = await Tiramisu.deployed();
+  const marzipan = await Marzipan.deployed();
   const fudge = await Fudge.deployed();
+
+  const [account] = await web3.eth.getAccounts();
 
   await deployer.deploy(
     MasterChef,
-    tiramisu.address,
+    marzipan.address,
     fudge.address,
-    deployer.provider.addresses[0],
-    100,
-    0
+    account,
+    web3.utils.toWei('100'),
+    5928754
   );
 };
