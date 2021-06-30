@@ -7,14 +7,15 @@ module.exports = async function (callback) {
 
   const [from] = await web3.eth.getAccounts();
 
-  const amount = '100';
-  const wei = web3.utils.toWei(amount);
+  await marzipan.approve(chef.address, web3.utils.toWei('10'), { from });
+  console.log('Approved', 10);
 
-  await marzipan.approve(chef.address, amount, { from });
-  console.log('Approved', amount);
-
-  await chef.enterStaking(wei, { from });
-  console.log('Staked', amount);
+  try {
+    await chef.enterStaking(web3.utils.toWei('9'), { from });
+    console.log('Staked', 9);
+  } catch (e) {
+    console.log(e);
+  }
 
   callback();
 };
