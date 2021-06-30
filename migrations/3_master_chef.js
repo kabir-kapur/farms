@@ -16,6 +16,8 @@ module.exports = async function (deployer) {
     web3.utils.toWei('100'),
     5928754
   );
+
   const masterChef = await MasterChef.deployed();
+  await marzipan.transferOwnership(masterChef.address, { from });
   await fudge.transferOwnership(masterChef.address, { from });
 };
