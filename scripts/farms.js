@@ -17,6 +17,8 @@ module.exports = async function (callback) {
   );
 
   const length = (await chef.poolLength()).toNumber();
+  console.log('Pool length', length);
+
   const farms = [
     { allocPoints: 300, token: tokens[networkId].CELO },
     { allocPoints: 200, token: tokens[networkId].cUSD },
@@ -31,6 +33,13 @@ module.exports = async function (callback) {
     });
     console.log('Added');
   }
+
+  const lp = await factory.methods
+    .getPair(tokens[networkId].CELO, tokens[networkId].cUSD)
+    .call();
+  await chef.add(100, lp, false, {
+    from,
+  });
 
   console.log('massUpdatePools');
   try {
