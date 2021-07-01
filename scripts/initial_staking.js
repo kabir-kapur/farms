@@ -27,7 +27,6 @@ module.exports = async function (callback) {
   // }
 
   const entries = Object.entries(tokens[networkId]);
-  console.log(entries);
   for (let i = 0; i <= entries.length; i++) {
     const [ticker, address] = entries[i];
     console.log('Staking', ticker, '<> MZPN LP');

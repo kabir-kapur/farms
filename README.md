@@ -1,17 +1,19 @@
-# PanCake Farming 🥞
+# Marzipan Farming 🍰
 
-[![Actions Status](https://github.com/pancakeswap/pancake-farm/workflows/CI/badge.svg)](https://github.com/pancakeswap/pancake-farm/actions)
-[![codecov](https://codecov.io/gh/pancakeswap/pancake-farm/branch/master/graph/badge.svg?token=5XMLP74IR0)](https://codecov.io/gh/pancakeswap/pancake-farm)
-
-https://pancakeswap.finance. Feel free to read the code. More details coming soon.
+https://marzipan.finance. Feel free to read the code. More details coming soon.
 
 ## Deployed Contracts / Hash
 
-### BSCMAINNET
+### Alfajores
 
-- CakeToken - https://bscscan.com/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82
-- MasterChef - https://bscscan.com/address/0x73feaa1eE314F8c655E354234017bE2193C9E24E
-- (Uni|Cake)swapV2Factory - https://bscscan.com/address/0xBCfCcbde45cE874adCB698cC183deBcF17952812
-- (Uni|Cake)swapV2Router02 - https://bscscan.com/address/0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F
-- (Uni|Cake)swapV2Pair init code hash - `0xd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66`
-- MultiCall - 0xE1dDc30f691CA671518090931e3bFC1184BFa4Aa
+- CakeToken (Marzipan) - [0x86c3890d71AD3AA20F73FbD6CBd22269D2FF0F5e](https://alfajores-blockscout.celo-testnet.org/address/0x86c3890d71AD3AA20F73FbD6CBd22269D2FF0F5e)
+- Syrup Bar (Fudge) - [0x8d4564B0921D1EeeB56228a06252dcfb5C69f46b](https://alfajores-blockscout.celo-testnet.org/address/0x8d4564B0921D1EeeB56228a06252dcfb5C69f46b)
+- MasterChef - [0x2d19705Fb66B4BA17DecAd6967532CE539f03865](https://alfajores-blockscout.celo-testnet.org/address/0x2d19705Fb66B4BA17DecAd6967532CE539f03865)
+- MultiCall - [0xb467e6ED57Ab0856eE23C760681402E1f5492007](https://alfajores-blockscout.celo-testnet.org/address/0xb467e6ED57Ab0856eE23C760681402E1f5492007)
+
+### Mainnet
+
+- CakeToken (Marzipan) - [0x1e3E3CAe1D74b53615898B821B1A6b87e1Ffe0Ed](https://explorer.celo.org/address/0x1e3E3CAe1D74b53615898B821B1A6b87e1Ffe0Ed)
+- Syrup Bar (Fudge) - [0x2d19705Fb66B4BA17DecAd6967532CE539f03865](https://explorer.celo.org/address/0x2d19705Fb66B4BA17DecAd6967532CE539f03865)
+- MasterChef - [0x2A7C81558c420B5F55e653012f398Ecc6765bA4b](https://explorer.celo.org/address/0x2A7C81558c420B5F55e653012f398Ecc6765bA4b)
+- MultiCall - [0xd0c8884F6fDb8FC8B11036C0e5D1bBC807BdFefd](https://explorer.celo.org/address/0xd0c8884F6fDb8FC8B11036C0e5D1bBC807BdFefd)
