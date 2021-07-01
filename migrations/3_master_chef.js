@@ -17,7 +17,7 @@ module.exports = async function (deployer) {
     marzipan.address,
     fudge.address,
     from,
-    10, // MZPN per block
+    web3.utils.toWei('10'), // MZPN per block
     startBlock
   );
 

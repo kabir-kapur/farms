@@ -6,10 +6,10 @@ https://marzipan.finance. Feel free to read the code. More details coming soon.
 
 ### Alfajores
 
-- CakeToken (Marzipan) - [0x247D15751F0D988B7729174D4802e9452981cBD6](https://alfajores-blockscout.celo-testnet.org/address/0x247D15751F0D988B7729174D4802e9452981cBD6)
-- Syrup Bar (Fudge) - [0xD0deAc8c7247897DFE39236Dc6FcB40Ff04De320](https://alfajores-blockscout.celo-testnet.org/address/0xD0deAc8c7247897DFE39236Dc6FcB40Ff04De320)
-- MasterChef - [0x9Ee153D4Fdf0E3222eFD092c442ebB21DFd346AC](https://alfajores-blockscout.celo-testnet.org/address/0x9Ee153D4Fdf0E3222eFD092c442ebB21DFd346AC)
-- MultiCall - [0x648Bb38368061425fb95E7aC361c4A6D7c984A47](https://alfajores-blockscout.celo-testnet.org/address/0x648Bb38368061425fb95E7aC361c4A6D7c984A47)
+- CakeToken (Marzipan) - [0x4d8BF8347600f5207bfdad57363fBa802C9C2031](https://alfajores-blockscout.celo-testnet.org/address/0x4d8BF8347600f5207bfdad57363fBa802C9C2031)
+- Syrup Bar (Fudge) - [0x07ce6803079051335c307ceeDE612Cd989F5f85a](https://alfajores-blockscout.celo-testnet.org/address/0x07ce6803079051335c307ceeDE612Cd989F5f85a)
+- MasterChef - [0xdD726b524453476b6a0b17693506ef16d9F7090f](https://alfajores-blockscout.celo-testnet.org/address/0xdD726b524453476b6a0b17693506ef16d9F7090f)
+- MultiCall - [0xE55bC2F3e1Ea4c454564F985e2b517F8AB67A8F8](https://alfajores-blockscout.celo-testnet.org/address/0xE55bC2F3e1Ea4c454564F985e2b517F8AB67A8F8)
 
 ### Mainnet
 
