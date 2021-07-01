@@ -13,7 +13,7 @@ https://marzipan.finance. Feel free to read the code. More details coming soon.
 
 ### Mainnet
 
-- CakeToken (Marzipan) - [0x1e3E3CAe1D74b53615898B821B1A6b87e1Ffe0Ed](https://explorer.celo.org/address/0x1e3E3CAe1D74b53615898B821B1A6b87e1Ffe0Ed)
-- Syrup Bar (Fudge) - [0x2d19705Fb66B4BA17DecAd6967532CE539f03865](https://explorer.celo.org/address/0x2d19705Fb66B4BA17DecAd6967532CE539f03865)
-- MasterChef - [0x2A7C81558c420B5F55e653012f398Ecc6765bA4b](https://explorer.celo.org/address/0x2A7C81558c420B5F55e653012f398Ecc6765bA4b)
-- MultiCall - [0xd0c8884F6fDb8FC8B11036C0e5D1bBC807BdFefd](https://explorer.celo.org/address/0xd0c8884F6fDb8FC8B11036C0e5D1bBC807BdFefd)
+- CakeToken (Marzipan) - [0x9Ee153D4Fdf0E3222eFD092c442ebB21DFd346AC](https://explorer.celo.org/address/0x9Ee153D4Fdf0E3222eFD092c442ebB21DFd346AC)
+- Syrup Bar (Fudge) - [0xD1A5A741Aa1DC912Fad739A0e3eE1a0b9F37bF75](https://explorer.celo.org/address/0xD1A5A741Aa1DC912Fad739A0e3eE1a0b9F37bF75)
+- MasterChef - [0xC49A227F114d467036182d74a44A65B69fd16061](https://explorer.celo.org/address/0xC49A227F114d467036182d74a44A65B69fd16061)
+- MultiCall - [0xc752B14aF28365b99a3cc894D242388b09A4e584](https://explorer.celo.org/address/0xc752B14aF28365b99a3cc894D242388b09A4e584)
