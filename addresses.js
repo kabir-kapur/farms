@@ -1,3 +1,9 @@
+const networkIds = {
+  alfajores: '44787',
+  mainnet: '42220',
+};
+module.exports.networkIds = networkIds;
+
 // https://github.com/Ubeswap/ubeswap/blob/master/deployments/exchange.alfajores.addresses.json
 module.exports.ubeswap = {
   44787: {
