@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "migrate-alfajores": "truffle migrate --network alfajores",
+    "migrate-alfajores": "truffle migrate --network alfajores --reset",
     "migrate-mainnet": "truffle migrate --network mainnet --reset",
     "compile": "truffle compile --network mainnet",
     "test": "npx builder test",

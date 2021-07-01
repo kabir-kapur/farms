@@ -24,7 +24,7 @@ module.exports = async function (callback) {
     { allocPoints: 200, token: tokens[networkId].cUSD },
     { allocPoints: 100, token: tokens[networkId].cEUR },
   ];
-  for (let i = length; i < farms.length; i++) {
+  for (let i = length - 1; i < farms.length; i++) {
     const { allocPoints, token } = farms[i];
     const lp = await factory.methods.getPair(token, marzipan.address).call();
     console.log('Add', i, `(${lp})`);
@@ -40,6 +40,7 @@ module.exports = async function (callback) {
   await chef.add(100, lp, false, {
     from,
   });
+  console.log('Added CELO <> cUSD farm');
 
   console.log('massUpdatePools');
   try {
